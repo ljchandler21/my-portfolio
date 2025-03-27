@@ -43,6 +43,13 @@ body {
     color: white;
 }
 
+/* Silesia */
+.silesia {
+    text-align: center;
+    padding: 100px 20px;
+    
+}
+
 /* Summary Sections */
 .summary {
     text-align: center;
