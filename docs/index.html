@@ -13,21 +13,25 @@
     <title>Logan Chandler | Home</title>
 </head>
 <body>
-<nav class="navbar">
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+
 <header class="header">
     <h2 class="visually-hidden">Header</h2>
     <div class="wrapper">
         <nav class="header__nav">
             <h2 class="visually-hidden">Navigation</h2>
+            <div class="dropdown">
+                <a href="index.html" class="dropdown-button">loganchandler
+                    <span class="visually-hidden">(to home page)</span>
+                </a>
+                <div class="dropdown-content">
+                    <a href="games/index.html">Games</a>
+                    <a href="software/index.html">Software</a>
+                    <a href="music/index.html">Music</a>
+                    <a href="video/index.html">Video</a>
+                    <a href="photo/index.html">Photo</a>
+                </div>
+            </div>
             <a href="/" class="header__home">
-                loganchandler
                 <span class="visually-hidden">(to home page)</span>
             </a>
             <a href="https://github.com/ljchandler21" class="header__social">
@@ -105,17 +109,21 @@
                 <picture>
                     <source
                             media="(min-width: 62.5em)"
-                            srcset="assets/images/image-profile-desktop.webp"
+                            srcset="assets/images/image-profile-desktop.jpg"
+                            width="890"
+                            height="1440"
                     />
                     <source
                             media="(min-width: 37.5em)"
-                            srcset="assets/images/image-profile-tablet.webp"
+                            srcset="assets/images/image-profile-tablet.jpg"
+                            width="646"
+                            height="766"
                     />
                     <img
                             class="hero__image"
-                            src="assets/images/image-profile-mobile.webp"
-                            alt="picture of Adam Keyes"
-                            width-="174"
+                            src="assets/images/image-profile-mobile.jpg"
+                            alt="picture of Logan Chandler"
+                            width="174"
                             height="383"
                     />
                 </picture>
