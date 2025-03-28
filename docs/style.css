@@ -25,9 +25,13 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: #333;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.hidden {
+    top: -60px;
 }
 
 .nav-bar nav ul {
