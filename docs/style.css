@@ -1,10 +1,23 @@
 /* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+
+:root {
+    --bg-body: hsl(0, 0%, 8%);
+    --bg-body2: hsl(0, 0%, 14%);
+    --accent: hsl(153, 71%, 59%);
+    --text1: hsl(0, 0%, 100%);
+    --text2: hsl(0, 0%, 85%);
+    --invalid: hsl(7, 100%, 68%);
+    --fs-18: 1.125rem;
+    --fs-88: 5.5rem;
+    --fs-72: 4.5rem;
+    --fs-40: 2.5rem;
+    --fs-48: 3rem;
+    --fs-36: 2.25rem;
+    --fs-32: 2rem;
+    --fs-24: 1.5rem;
+    --fs-20: 1.25rem;
+    --container: 69.375rem;
+    --transition: 250ms ease-in-out;
 }
 
 /* Navigation Bar */
@@ -12,7 +25,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: white;
+    background: #333;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
@@ -31,15 +44,24 @@ body {
 
 .nav-bar nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: 600;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*#f8f8f8 #121212*/
+    background-color: var(--bg-body);
+    color: #333;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    background: linear-gradient(135deg, #06410c, #178622);
     color: white;
 }
 
@@ -47,14 +69,20 @@ body {
 .silesia {
     text-align: center;
     padding: 100px 20px;
-    
+    background: url("assets/frame_9.png") center center /cover;
+    color: white;
+}
+
+.game-body {
+    text-align: left;
+    padding: 100px 20px;
 }
 
 /* Summary Sections */
 .summary {
     text-align: center;
     padding: 60px 20px;
-    background: white;
+    background: var(--bg-body2);
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
